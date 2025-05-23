@@ -16,19 +16,35 @@ export default function SignUp() {
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    // TODO: Send formData to backend or handle signup logic
-  };
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  try {
+    const res = await fetch("http://localhost:5000/api/auth/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(formData)
+    });
+    const data = await res.json();
+    if (res.ok && data.token) {
+      localStorage.setItem("token", data.token);
+      localStorage.setItem("username", data.username); // Save username for Home page
+      alert("Login successful!");
+      navigate("/home"); // <-- Redirect to Home page
+    } else {
+      setError(data.message || "Login failed");
+    }
+  } catch (err) {
+    alert("Network error");
+  }
+};
 
   return (
     <div className="cart cart3">
       <div style={{ zIndex: 1 }} className="column">
         <div className="top-area">
-          <p>about us</p>
-          <p>terms & conditions</p>
-          <p>security</p>
+          <p>About Us</p>
+          <p>Terms & Conditions</p>
+          <p>Security</p>
         </div>
 
         <form onSubmit={handleSubmit} className="log-in-area column">
