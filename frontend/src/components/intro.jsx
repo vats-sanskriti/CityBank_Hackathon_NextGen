@@ -7,9 +7,9 @@ export default function Intro() {
     <div className="cart cart1">
       <div style={{ zIndex: 1 }} className="column">
         <div className="top-area">
-          <p>about us</p>
-          <p>terms & conditions</p>
-          <p>security</p>
+          <p>About us</p>
+          <p>Terms & Conditions</p>
+          <p>Security</p>
         </div>
         <div className="start-your">
           <p>Start</p>
@@ -17,8 +17,10 @@ export default function Intro() {
           <p>Now</p>
         </div>
         <div className="button-area column">
+      <Link to="/signup">
           <button>Sign Up</button>
-          <div className="account-area">
+        </Link>        
+    <div className="account-area">
            <p>Have account? <Link to="/login">Log in here</Link></p>
           </div>
         </div>
