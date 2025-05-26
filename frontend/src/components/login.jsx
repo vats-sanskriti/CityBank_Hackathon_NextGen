@@ -43,9 +43,9 @@ export default function Login() {
     <div className="cart cart2">
       <div style={{ zIndex: 1 }} className="column">
         <div className="top-area">
-          <p>About Us</p>
+          {/* <p>About Us</p>
           <p>Terms & Conditions</p>
-          <p>Security</p>
+          <p>Security</p> */}
         </div>
         <form className="log-in-area column" onSubmit={handleSubmit}>
           <h2>Log in</h2>
