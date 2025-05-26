@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+#cart-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d5d5d5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.cart {
+  width: 30%;
+  min-height: 80vh;
+  background-color: white;
+  position: relative;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.cart:hover {
+  transform: translateY(-10px);
+}
+
+.cart1 {
+  background-color: #2d3436;
+  color: white;
+}
+
+.cart2,
+.cart3 {
+  padding: 30px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.top-area {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.start-your {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 40px 0;
+}
+
+.start-your p {
+  margin: 5px 0;
+}
+
+.button-area button {
+  padding: 12px 20px;
+  background-color: #00cec9;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.button-area button:hover {
+  background-color: #00b894;
+}
+
+.account-area p {
+  font-size: 14px;
+}
+
+.account-area a {
+  color: #00cec9;
+  text-decoration: none;
+}
+
+.log-in-area h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.log-in-area label {
+  font-size: 14px;
+}
+
+.log-in-area input {
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}

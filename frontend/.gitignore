@@ -1,0 +1,14 @@
+# React
+node_modules/
+build/
+dist/
+coverage/
+.env
+.env.*
+*.log
+
+# IDEs and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

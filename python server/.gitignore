@@ -1,0 +1,40 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environments
+env/
+venv/
+ENV/
+.venv/
+.Python
+
+# Testing & coverage
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Django / Flask / DB files
+*.sqlite3
+db.sqlite3
+
+# Environment variables
+.env
+.env.*
+
+# Build
+*.egg-info/
+dist/
+build/
+
+# Logs
+*.log
+
+# IDEs and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
