@@ -1,6 +1,6 @@
-# CityBank_Hackathon_NextGen
 
-# 💼 CitiBank Hackathon - Next Gen Client Experience AI Platform
+
+Next Gen Client Experience AI Platform
 
 An AI-powered wealth management platform that predicts client needs before they arise — combining behavior, sentiment, and transaction data to deliver personalized, emotionally intelligent, and timely financial recommendations.
 
